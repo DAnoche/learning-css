@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page: Don't Panic</title>
     <style>
+        ul li{
+            display: inline-block;
+            margin-right: 2em;
+        }
         li a{
             color:red;
         }
@@ -15,29 +19,34 @@
         .reg-link{
             color: lightblue;
         }
-        .italic-link{
-            font-style: italic;
-        }
         #exec-bio {
             background-color: lightgray;
+            height: 100%;
         }
         .bio-box{
             border: 1px solid #000;
+            width: 50%;
+        }
+        .bio-box a{
+            color: green;
+        }
+        .bio-wrapper{
+            /*border: 1px solid black;*/
         }
 
     </style>
 </head>
 <body>
-    <h1>I'm an h1</h1>
+    <h1 style="display: inline;">I'm an h1</h1>
     <ul>
         <li>
             <a href="https://example.com/" id="sp-link">Link</a>
         </li>
         <li>
-            <a href="https://example.com/" class="reg-link italic-link">Link</a>
+            <a href="https://example.com/" class="reg-link">Link</a>
         </li>
         <li>
-            <a href="https://example.com/" class="reg-link italic-link">Link</a>
+            <a href="https://example.com/" class="reg-link">Link</a>
         </li>
     </ul>
     <h2>I'm an h2</h2>
@@ -47,16 +56,15 @@
             <a href="https://example.com/">Facebook</a>
             <div class="bio-copy">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates aliquid nostrum,
-                    ipsum accusantium molestias eum quod, vitae non sit porro, praesentium assumenda? Veniam laborum,
+                    <span style="margin: 4em 4em; display: inline-block;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Dolorem voluptates aliquid nostrum,
+                    ipsum accusantium molestias eum quod, vitae non sit porro,praesentium assumenda? Veniam laborum,
                     odio adipisci cumque ex quam sit quisquam excepturi eum necessitatibus aut provident
                     dolore laboriosam illo eveniet culpa.
                     At fugiat maxime ex iste, quas in error.
                 </p>
             </div>
         </div>
-    </div>
-    <div class="bio-box">
+        <div class="bio-box">
             <h3>Bjarne Stroustrup</h3>
             <a href="https://example.com/">Instagram</a>
             <div class="bio-copy">
@@ -68,8 +76,8 @@
                     At fugiat maxime ex iste, quas in error.
                 </p>
             </div>
-    </div>
-    <div class="bio-box alert">
+        </div>
+        <div class="bio-box alert">
             <h3>Robert C. Martin</h3>
             <a href="https://example.com/">Twitter</a>
             <div class="bio-copy">
@@ -81,6 +89,7 @@
                     At fugiat maxime ex iste, quas in error.
                 </p>
             </div>
+        </div>
     </div>
 </body>
 </html>
